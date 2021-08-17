@@ -5,6 +5,7 @@ const apiUrl = 'https://api.ocr.space/parse/image'
 function CopyTextForm(props) {
     const [isError, setIsError] = React.useState(false)
     const textRef = React.useRef(null);
+    const language = 'rus';
 
     function Uint8ToString(u8a){
         var CHUNK_SZ = 0x8000;
